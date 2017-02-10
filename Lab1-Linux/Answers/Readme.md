@@ -30,15 +30,17 @@ Esta linea indica donde se encuentra el interprete de comandos en nuestro sistem
 Se uso el comando 
 	cut -d: -f1,6 /etc/passwd| cut -d/ -f1,2| sort -b. 
 Este comando realiza dos cortes en / y en :. Luego deja el primer nombre y el shell. 
-12. 
+#12. 
 	```#! /bin/bash
 	md5sum *| sort |uniq -w33 -D   [3]
 	Este script permite indentificar las imagenes que se encuentran duplicadas.
-13. Se descargo la carpeta con el comando:
+#13. 
+Se descargo la carpeta con el comando:
 	scp -r vision@157.253.63.7:/datos1/vision/BSR_bsds500.tar
 Para descomprimirlo se uso el comando:
 	tar -xzvf Imagenes/BSR_bsds500.tgz
-14. Para hallar el disco que ocupa se utilizo el comando:
+#14. 
+Para hallar el disco que ocupa se utilizo el comando:
 	du -bs Imagenes/BSR   [4]
 Tiene un tamaño de 73540912 bytes
 
@@ -46,14 +48,17 @@ Hay 500 imagenes en el directorio solicitado
 Se utilizao el comando:
 	find Imagenes/BSR/BSDS500/data/images -name "*.jpg" | wc -l
 
-15. Las imagenes tienen un formato de .jpg y presentan una resolucion de 154K pixeles.
+#15. 
+Las imagenes tienen un formato de .jpg y presentan una resolucion de 154K pixeles.
 Se utilizao el comando:
 	identify -verbose "*.jpg". Se utilizo en cada carpeta de imagenes [5]
 
-16.Hay 348 imagenes landscape y 152 imagenes 
+#16.
+Hay 348 imagenes landscape y 152 imagenes 
 	find Imagenes/BSR/BSDS500/data/images -name "*.jpg" -exec identify {} \; | grep -i 481x321 | wc -l. Este codigo esta basado en la guia, el cambio se hace por 481x321. Esto funciona ya que todas las imagenes son de tamaño 481x321 o 321x481
 
-17. Para recortar las imagenes usamos:
+#17. 
+Para recortar las imagenes usamos:
 	convert -resize 256x256! *.jpg [6]
 
 Bibliografia: 
