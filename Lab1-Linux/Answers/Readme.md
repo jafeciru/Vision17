@@ -21,9 +21,9 @@ Sinónimo del comando tail -f, permite ver en tiempo real la parte final de un a
 El comando link se usa para crear un enlace a un archivo. También se le llama enlace duro. El inodo será el mismo para el origen y el destino.
 
 	del 1 al 8. [1]
-
-9. #! /bin/bash:
+#9. ```#! /bin/bash:
 Esta linea indica donde se encuentra el interprete de comandos en nuestro sistema. Por defecto todos los sistemas que tengan Bash instalado, lo tendran en el directorio /bin. Al utilizar esta linea, podremos ejecutar el script como un programa normal, ya que el sistema sabra que es un script en Bash y que tiene que hacer con el.[2] 
+
 10. Hay 8 usuarios en el servidor del curso.
 11. Se uso el comando 
 	cut -d: -f1,6 /etc/passwd| cut -d/ -f1,2| sort -b. Este comando realiza dos cortes en / y en :. Luego deja el primer nombre y el shell. 
