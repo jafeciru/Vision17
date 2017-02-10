@@ -1,25 +1,25 @@
-1. grep:
+# 1. grep:
 Su funcionalidad es la de escribir en salida estándar aquellas líneas que concuerden con un patrón. Busca patrones en archivos.
 Sintaxis: grep [-cilnv] expr nom_archivos.
-2. prune:
+# 2. prune:
 Es una restriccion a la funcion find. Esta impide que la funcion find busque por todo el directorio, restringe la busqueda.
 Ejemplo: find . -name .snapshot -prune -o -name "*.foo" -print
 Este comando encontrara los archvivos que contienen "*.foo" que no estan en los directorios ".snapshot".
-3. cut
+# 3. cut
 Ttiene como uso principal mostrar una columna de una salida determinada. La opción -d va seguida del delimitador de los campos y la opción -f va seguida del número de campo a mostrar. El “delimitador” por defecto es el tabulador, nosotros lo cambiamos con la opción -d. Tiene algunas otras opciones útiles.
 Sintaxis: cut [opciones] nom_archivo.
-4. rsync:
+# 4. rsync:
 Es una herramineta de copiado de archivos rapida y versatil. Puede copiar desde o hacia otro host, sobre cualquier shell remoto
-5. diff:
+# 5. diff:
 Busca y muestra diferencias entre archivos.
-6. tail:
+# 6. tail:
 Este comando es utilizado para examinar las últimas líneas de un fichero.
 Sintaxis: tail -count nom_archivo.
-7. tail-f
+# 7. tail-f
 Sinónimo del comando tail -f, permite ver en tiempo real la parte final de un archivo, es decir, conforme se va escribiendo, útil para monitorear bitácoras.
-8. link:
+# 8. link:
 El comando link se usa para crear un enlace a un archivo. También se le llama enlace duro. El inodo será el mismo para el origen y el destino.
-	
+
 	del 1 al 8. [1]
 
 9. #! /bin/bash:
