@@ -28,7 +28,7 @@ Esta linea indica donde se encuentra el interprete de comandos en nuestro sistem
 11. Se uso el comando 
 	cut -d: -f1,6 /etc/passwd| cut -d/ -f1,2| sort -b. Este comando realiza dos cortes en / y en :. Luego deja el primer nombre y el shell. 
 12. 
-	#! /bin/bash
+	```#! /bin/bash
 	md5sum *| sort |uniq -w33 -D   [3]
 	Este script permite indentificar las imagenes que se encuentran duplicadas.
 13. Se descargo la carpeta con el comando:
