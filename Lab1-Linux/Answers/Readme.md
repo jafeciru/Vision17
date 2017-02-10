@@ -42,6 +42,7 @@ Tiene un tamaño de 73540912 bytes
 Hay 500 imagenes en el directorio solicitado
 Se utilizao el comando:
 	find Imagenes/BSR/BSDS500/data/images -name "*.jpg" | wc -l
+
 15. Las imagenes tienen un formato de .jpg y presentan una resolucion de 154K pixeles.
 Se utilizao el comando:
 	identify -verbose "*.jpg". Se utilizo en cada carpeta de imagenes [5]
